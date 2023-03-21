@@ -25,7 +25,7 @@ fname = config['epo']
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
 
 
-epochs = mne.io.read_epochs(fname)
+epochs = mne.read_epochs(fname)
 epochs.interpolate_bads()
 
 
