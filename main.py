@@ -19,7 +19,7 @@ with open(__location__+'/config.json') as config_json:
     config = json.load(config_json)
 
 
-fname = config['epo']
+fname = config['meg-epo']
 
 
 # COPY THE METADATA CHANNELS.TSV, COORDSYSTEM, ETC ==============================
@@ -30,5 +30,5 @@ epochs.interpolate_bads()
 
 
 # save mne/epochs
-epochs.save(os.path.join('out_dir','epo.fif'))
+epochs.save(os.path.join('out_dir','meg-epo.fif'))
 
